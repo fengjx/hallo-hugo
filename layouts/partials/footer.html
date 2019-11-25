@@ -1,5 +1,9 @@
 <footer>
-    <div class="column"></div>
+    <div class="column">
+        Copyright {{ .Site.Params.copyright }} &copy; {{ .Site.Author.name }} | 
+        <span><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></span> | 
+        <span><a href="http://www.beian.gov.cn/" target="_blank">{{ .Site.Params.beian }}</a></span>
+    </div>
     <div class="column">
         {{ i18n "generator" | safeHTML }}
     </div>
